@@ -20,8 +20,16 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+> > pwd = shows current working directory path
+mkdir = make directory (or folder)
+rmdir = delete a directory
+touch filename = create a file
+rmfilename = delete a file
+mv oldfilename newfilename = change a file name
+ls -ld .?* = list hidden files/directories
+cp filename directoryname = copying file from one location to another
+grep = search for the word/file you are looking for from history
+history = shows all last commands that were written
 ---
 
 ### Q2.  List Files in Unix   
@@ -35,23 +43,31 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+> > ls = lists everything in the current directory
+ls -a = list with hidden files
+ls -l = displays mtimes (last file data modification times)
+ls -lh = lists long format with readable file size
+ls -lah = lists long format with readable file size with hidden files
+ls -t = sorts files/directories by time/date
+ls -Glp = in a long listing don't print group names, displays modification times, append indicator to directories (adds a slash to directories)
 ---
 
 ### Q3.  More List Files in Unix  
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+> > ls -t = displays in order by timestamp
+ls -d = displays only directories
+ls -R = displays subdirectories as well
+ls -u = displays files by file access time
+ls -o = Displays the long format listing, but excludes group name.
 ---
 
 ### Q4.  Xargs   
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+> > xargs divides a big list of into a sub list received from standard input. 
+ls | xargs grep searchterm = this adds the output of ls files to grep searchterm files, so it will ID which files in the ls have your searchterm that you are looking for. 
  
 
